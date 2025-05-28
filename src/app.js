@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { Scene } from 'three';
 import Camera from './engine/camera';
-import Light from './engine/Light';
+import Light from './engine/light.js';
 import Graphic from './engine/graphic';
 import physic from './engine/physic';
 import loadSkybox from './tool/loadSkybox';
