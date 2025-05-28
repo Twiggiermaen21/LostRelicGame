@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost Relic</title>
+  <link rel="icon" href="/src/assets/icon/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/src/assets/css/ui.css">
+  <link rel="stylesheet" href="/src/assets/css/crosshair.css">
+  <link rel="stylesheet" href="/src/assets/css/game.css">
+  <link rel="stylesheet" href="/src/assets/css/enemy.css">
+  <script src="./src/app.js" type="module"></script>
+</head>
+
+<body>
+
+  <div id="start-screen">
+    <img src="/src/assets/images/piramide.png" id="bg-image" alt="Pyramid background">
+    <img src="/src/assets/images/tung-indiana.png" id="tung-image" alt="Tung Tung explorer">
+    <img src="/src/assets/images/sand-wave.png" id="sand-wave" alt="Sand Wave Decoration" />
+    <h1>Lost Relic</h1>
+    <button id="start-button">Start Game</button>
+  </div>
+
+  <div id="loading-screen">
+    <div>
+      <div id="loading-text">Loading...</div>
+      <div id="loading-progress"></div>
+    </div>
+  </div>
+
+  <div id="ui">
+    <div id="health-container">
+      <div id="health-bar"></div>
+      <span id="health-label">
+        <span class="icon">❤️</span>
+        Health
+      </span>
+    </div>
+    <div id="treasure-container">
+      <div id="treasure-bar"></div>
+      <span id="treasure-label">
+        <span class="icon">💰</span>
+        <span id="treasure-count">0</span>/<span id="treasure-max">5</span>
+      </span>
+    </div>
+  </div>
+
+
+  <div id="crosshair"></div>
+
+  <div id="game-over" style="display:none;">
+    GAME OVER <br />
+    <span id="reset">Kliknij lub naciśnij dowolny klawisz, aby zrestartować</span>
+  </div>
+  <canvas></canvas>
+</body>
+
+</html>
